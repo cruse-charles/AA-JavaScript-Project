@@ -1,5 +1,4 @@
 Introduction to Whack-A-Bara:
-
     An introduction to the game will be given by a farmer character who is in need of assistance. Capybaras are eating all his vegetables and he needs help diriving them away. The objective of the game is to hit as many capybaras as a player can. 
     
     Capybara images will appear and disappear out of many holes. A player must move their hammer (cursor) and click on the capybaras to whack them before they hide back into their hole. Any capybara successfully hit will increase the player's score, which will be displayed at the top. However, the farmer is underground as well to 'make the capybaras pop out.' If a user hits the farmer, then the game is over. A timer will also be added as another condition for the game to end. 

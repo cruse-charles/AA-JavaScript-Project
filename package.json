@@ -1,0 +1,37 @@
+{
+  "name": "js_project",
+  "version": "1.0.0",
+  "description": "Introduction to Whack-A-Bara:\r     An introduction to the game will be given by a farmer character who is in need of assistance. Capybaras are eating all his vegetables and he needs help diriving them away. The objective of the game is to hit as many capybaras as a player can.",
+  "main": "index.js",
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cruse-charles/AA-JavaScript-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cruse-charles/AA-JavaScript-Project/issues"
+  },
+  "homepage": "https://github.com/cruse-charles/AA-JavaScript-Project#readme",
+  "dependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "core-js": "^3.29.0",
+    "css-loader": "^6.7.3",
+    "mini-css-extract-plugin": "^2.7.3",
+    "regenerator-runtime": "^0.13.11",
+    "sass": "^1.58.3",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.76.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
