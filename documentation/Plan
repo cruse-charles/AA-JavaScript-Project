@@ -1,0 +1,80 @@
+What classes would be needed?
+    Hammer Object
+        hammer down action
+        hammer up action
+        cursor is the hammer
+    
+    Capybara Object
+        pop in
+        pop out
+        be hit animation
+            score incremented for correct hit
+            game over for incorrect hit
+        multiple mCapybaras to pop in
+            But should not be popping in on the same square 
+        trap Capybara (maybe the farmer says he will chase the capybaras underground and he might pop up instead, resulting in the game over, only one of him though?)
+
+    Grid Object
+        3x3 Object (maybe 4x4)
+
+    score Object
+        running total for score
+
+    Background/Color
+        edit grid sections to appear like holes
+        edit background to have a field kind of view, maybe an angry farmer is seen and you are helping the farmer who will give you the instructions
+
+    Instructions object
+        Message displayed by a farmer who says they need help protecting their farm, providing instructions
+
+    Audio
+        Sound hitting audio
+        background music playing
+
+
+
+
+
+Order of Construction
+    Create grid object
+        Create appropriate size and grid-like structure
+
+    Create Capybara object
+        Create the capybaara object as just a basic box to be displayed
+        Just appear in the square, no transition effect yet
+        Crate 'trap' capybara
+
+    Create click action
+        click action on the capybara object should make object disappear
+
+    Create Score object at top of the screen
+        increment score on every successful click of the capybara
+
+    Game Over scenario
+        End the game when a 'trap' capybara has been hit
+
+    Replace capybara square with an actual image to be used
+
+    Create background canvas of a farm/field
+
+    Create instructions object that pops up when user enters the page, with enlarged farmer image as if he is speaking
+        Insctructions: These darn capybaras keep eating my vegetables! I need your help giving them a good whack on the head.
+        I'll head underground to drive them out, but be careful to not whack me!
+
+    Create farmer image that stands on the right of the screen, next to a farm house
+
+    Add background music to be used
+
+    Create 'hole' images for each grid square
+    
+    Create transition effect of the capybara from just appearing/disappearing
+
+    Change image of capybara once it has been clicked on by the mouse
+
+    Create hammer image to replace mouse cursor
+
+    Create hammer animation 
+
+    Add audio on hammer action
+
+    Add farmer animation of jumping up and down on successful hits
