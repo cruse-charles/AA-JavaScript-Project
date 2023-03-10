@@ -40,7 +40,7 @@ body {
   background-color: lightgreen;
 }
 
-.board {
+#board {
   height: 600px;
   width: 600px;
   background-color: green;
@@ -56,4 +56,23 @@ body {
   width: 180px;
   background-color: blue;
   border-radius: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#capy {
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  bottom: 0%;
+  animation: rise 0.3s ease-out;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
