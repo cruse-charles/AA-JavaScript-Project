@@ -37,9 +37,23 @@ ol, ul {
 }
 
 body {
-  height: 500px;
-  width: 500px;
+  background-color: lightgreen;
+}
+
+.board {
+  height: 600px;
+  width: 600px;
+  background-color: green;
+  border: 3px solid black;
+  margin: 0 400px;
   display: flex;
   flex-wrap: wrap;
-  border: 3px solid black;
+  justify-content: space-between;
+}
+
+.hole {
+  height: 180px;
+  width: 180px;
+  background-color: blue;
+  border-radius: 100%;
 }
