@@ -6,15 +6,22 @@
     //     new Example(main);
     // })
     
+//------------------------------------------------------------
 
 
 
-// import Capy from './scripts/create_chars'
+// how can i divide these into different classes and call on them, tried it and failed
+
+
+
+//I have to define hole on the outside for capybara photos to create and delete themselves, why?
+let hole
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("hi");
     setHoles();
     createCapy();
+    runGame()
 })
 
 function setHoles() {
@@ -27,11 +34,30 @@ function setHoles() {
 
 }
 
+let capy
+
 function createCapy() {
-    let capy = document.createElement("img");
-    capy.id = "capy"
+
+    if(hole) {
+        hole.innerHTML = "";
+    }
+
+
+    capy = document.createElement("img");
+    capy.id = "capy";
     capy.src = './assets/capybara.PNG';
-    let hole = document.getElementById("1");
+
+    let num = randomNum();
+    hole = document.getElementById(num);
     hole.appendChild(capy);
+
 }
 
+function runGame() {
+    setInterval(createCapy,1000);
+}
+
+function randomNum() {
+    let num = Math.floor(Math.random() * 10);
+    return num.toString();
+}
