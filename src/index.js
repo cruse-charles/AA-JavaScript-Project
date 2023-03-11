@@ -45,7 +45,7 @@ function createCapy() {
 
     capy = document.createElement("img");
     capy.id = "capy";
-    capy.src = './assets/capybara.PNG';
+    capy.src = './assets/clear-capybara.png';
 
     let num = randomNum();
     hole = document.getElementById(num);
