@@ -1,4 +1,5 @@
 // import Example from './scripts/example'
+// import { setHoles } from "./scripts/create_holes";
 
 // document.addEventListener("DOMContentLoaded", () => {
     //     console.log("Hello")
@@ -22,7 +23,6 @@ let score = 0
 document.addEventListener("DOMContentLoaded", () => {
     console.log("hi");
     setHoles();
-    createCapy();
     runGame();
 })
 
@@ -35,6 +35,8 @@ function setHoles() {
     }
 
 }
+
+
 
 
 function createCapy() {
