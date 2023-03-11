@@ -26,15 +26,15 @@ document.addEventListener("DOMContentLoaded", () => {
     runGame();
 })
 
-function setHoles() {
-    for(let i = 1; i < 10; i++) {
-        let hole = document.createElement("div");
-        hole.id = i.toString();
-        hole.classList.add('hole');
-        document.getElementById("board").appendChild(hole)
-    }
+// function setHoles() {
+//     for(let i = 1; i < 10; i++) {
+//         let hole = document.createElement("div");
+//         hole.id = i.toString();
+//         hole.classList.add('hole');
+//         document.getElementById("board").appendChild(hole)
+//     }
 
-}
+// }
 
 
 
