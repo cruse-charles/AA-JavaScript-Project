@@ -36,7 +36,12 @@ ol, ul {
 	list-style: none;
 }
 
-// finished reset
+// ------------------------------------------finished reset------------------------------------------
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
 
 body {
     background-color: lightgreen;
@@ -48,7 +53,7 @@ body {
     width: 600px;
     background-color: green;
     border: 3px solid black;
-    margin: 0 400px;
+    margin: auto auto;
 
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +64,7 @@ body {
 .hole {
     height: 180px;
     width: 180px;
-    background-color: blue;
+    background-color: rgb(157, 76, 18);
     border-radius: 100%;
 
     position: relative;

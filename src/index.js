@@ -16,12 +16,14 @@
 
 //I have to define hole on the outside for capybara photos to create and delete themselves, why?
 let hole
+let capy
+let score = 0
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("hi");
     setHoles();
     createCapy();
-    runGame()
+    runGame();
 })
 
 function setHoles() {
@@ -34,7 +36,6 @@ function setHoles() {
 
 }
 
-let capy
 
 function createCapy() {
 
@@ -55,9 +56,15 @@ function createCapy() {
 
 function runGame() {
     setInterval(createCapy,1000);
+
 }
 
 function randomNum() {
     let num = Math.floor(Math.random() * 10);
     return num.toString();
+}
+
+
+function clickCapy () {
+    
 }
