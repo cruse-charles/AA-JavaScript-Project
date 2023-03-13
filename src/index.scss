@@ -46,7 +46,7 @@ h1 {
 body {
     background-color: lightgreen;
     overflow: hidden;
-    // cursor: none;
+    cursor: none;
 }
 
 #board {
@@ -72,7 +72,7 @@ body {
     overflow: hidden;
 }
 
-#capy {
+.character {
     width: 70%;
     position: absolute;
     left: 15%;
@@ -83,21 +83,14 @@ body {
 //exiting
     // animation-iteration-count: 2;
     // animation-direction: alternate; 
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
-
-#capy2 {
-    width: 70%;
-    position: absolute;
-    left: 15%;
-    bottom: 0%;
-
-    animation: popin .4s ease-in-out;
-// See if I can code something here with making the capybara stay for a second or two before 
-//exiting
-    // animation-iteration-count: 2;
-    // animation-direction: alternate; 
-}
 
 @keyframes popin {
     0%{
@@ -109,34 +102,17 @@ body {
 }
 
 
-
-
-
-
-#farmer {
-    width: 70%;
-    position: absolute;
-    left: 15%;
-    bottom: 0%;
-
-    animation: popin .4s ease-in-out;
-}
-
 .cursor {
     height: 100px;
     width: 160px;
     position: absolute;
-    // top: 10px;
-    // left: 10px;
     background-size: 100% 100%;
     background-image: url('../assets/hammer_transparent.png');
-    transform: translate(-60% -60%);
-    // transition: transform .1s;
+    transform: translate(-40%, -40%);
+    transition: transform .1s;
     pointer-events: none;
 }
 
-// .cursor {
-
-//     cursor: url('../assets/hammer_transparent.png'), auto;
-
-// }
+.cursor.active {
+    transform: translate(-40%, -40%) rotate(-45deg)
+}

@@ -18,19 +18,25 @@
 //******I have to define hole on the outside for capybara photos to create 
 //and delete themselves, why?
 let hole
-let hole2
-let hole3
-let capy
+let capyHole1
+let capyHole2
+let farmerHole
+let num1
+let num2
+let num3
+let capy1
 let capy2
 let farmer
 let score = 0
 let gameOver = false
+let arr = [0,1,2,3,4,5,6,7,8]
+
+// import Capy from './scripts/create_chars'
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("start");
     setHoles();
     runGame();
-
 
     
 })
@@ -46,88 +52,115 @@ function setHoles() {
 }
 
 
-function createCapy() {
+function createCapy1() {
 
-    if(hole || hole2) {
-        hole.innerHTML = "";
-        hole2.innerHTML = "";
+    if(gameOver) {
+        return
     }
 
-    console.log(hole);
-    console.log(hole2);
-    console.log(hole3)
 
-    capy = document.createElement("img");
-    capy.id = "capy";
-    capy.src = './assets/capybara.png';
+    if(capyHole1) {
+        capyHole1.innerHTML = "";
+    }
 
-    let num = randomNum();
-    hole = document.getElementById(num);
-    hole.appendChild(capy);
+    capy1 = document.createElement("img");
+    capy1.id = "capy1";
+    capy1.src = './assets/clear-capybara.png';
+    capy1.classList.add('character')
 
-    capy.addEventListener('click', () => {
+    num1 = randomNum();
+ 
+    capyHole1 = document.getElementById(num1);
+    capyHole1.appendChild(capy1);
+
+    capy1.addEventListener('click', () => {
         score += 10;
         document.getElementById("score").innerText = score.toString();
-        hole.removeChild(capy);
+        capyHole1.removeChild(capy1);
     })
 
     
     
+}
+
+
+function createCapy2() {
+
+    if(gameOver) {
+        return
+    }
+
+    if(capyHole2) {
+        capyHole2.innerHTML = "";
+    }   
     
     capy2 = document.createElement("img");
     capy2.id = "capy2";
     capy2.src = './assets/clear-capybara.png';
+    capy2.classList.add('character')
     
-    let num2 = randomNum();
-    hole2 = document.getElementById(num2);
-    hole2.appendChild(capy2);
+    num2 = randomNum();
+
+    capyHole2 = document.getElementById(num2);
+    capyHole2.appendChild(capy2);
     
     capy2.addEventListener('click', () => {
         score += 10;
         document.getElementById("score").innerText = score.toString();
-        hole2.removeChild(capy2);
+        capyHole2.removeChild(capy2);
     })
-    //****Still have a problem of both capys appearing in same hole and with farmer too
+    
+
 }
-
-
-
 
 
 
 
 function createFarmer() {
 
-    if(hole3) {
-        hole3.innerHTML = "";
+    if(gameOver) {
+        return
+    }
+
+    if(farmerHole) {
+        farmerHole.innerHTML = "";
     }
 
     let farmer = document.createElement("img");
     farmer.id = "farmer";
     farmer.src = './assets/transparent_farmer.png';
+    farmer.classList.add('character')
 
-    let num3 = randomNum();
-    hole3 = document.getElementById(num3);
-    hole3.appendChild(farmer);
+    num3 = randomNum();
+
+    farmerHole = document.getElementById(num3);
+    farmerHole.appendChild(farmer);
 
     farmer.addEventListener('click', () => {
         gameOver = true
-        document.getElementById("score").innerText = "Game Over:" + score.toString();
+        document.getElementById("h1").innerText = "Game Over: " + score.toString();
     })
+
 
 }
 
 function runGame() {
-    setInterval(createCapy,1500);
-    setInterval(createFarmer, 1500);
-
+    setInterval(createCapy1, 1000);
+    // new Capy();
+    setInterval(createCapy2, 1000);
+    setInterval(createFarmer, 1000);
+    setInterval(resetArr, 1000)
 }
 
 function randomNum() {
-    let num = Math.floor(Math.random() * 9);
-    return num.toString();
+    let num = Math.floor(Math.random() * arr.length);
+    let randNum = arr.splice(num,1)[0]
+    return randNum.toString();
 }
 
+function resetArr() {
+    arr = [0,1,2,3,4,5,6,7,8]
+}
 
 function clickCapy () {
     //How can I get the clicking to be it's own function
