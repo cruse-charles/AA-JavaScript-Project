@@ -85,6 +85,20 @@ body {
     // animation-direction: alternate; 
 }
 
+
+#capy2 {
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    bottom: 0%;
+
+    animation: popin .4s ease-in-out;
+// See if I can code something here with making the capybara stay for a second or two before 
+//exiting
+    // animation-iteration-count: 2;
+    // animation-direction: alternate; 
+}
+
 @keyframes popin {
     0%{
         transform: translateY(100%);
@@ -93,6 +107,10 @@ body {
         transform: translateY(0)
     }
 }
+
+
+
+
 
 
 #farmer {

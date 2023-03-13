@@ -55,10 +55,11 @@ function createCapy() {
 
     console.log(hole);
     console.log(hole2);
+    console.log(hole3)
 
     capy = document.createElement("img");
     capy.id = "capy";
-    capy.src = './assets/clear-capybara.png';
+    capy.src = './assets/capybara.png';
 
     let num = randomNum();
     hole = document.getElementById(num);
@@ -74,7 +75,7 @@ function createCapy() {
     
     
     capy2 = document.createElement("img");
-    capy2.id = "capy";
+    capy2.id = "capy2";
     capy2.src = './assets/clear-capybara.png';
     
     let num2 = randomNum();
@@ -88,6 +89,12 @@ function createCapy() {
     })
     //****Still have a problem of both capys appearing in same hole and with farmer too
 }
+
+
+
+
+
+
 
 function createFarmer() {
 

@@ -74,6 +74,14 @@ body {
   animation: popin 0.4s ease-in-out;
 }
 
+#capy2 {
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  bottom: 0%;
+  animation: popin 0.4s ease-in-out;
+}
+
 @keyframes popin {
   0% {
     transform: translateY(100%);
