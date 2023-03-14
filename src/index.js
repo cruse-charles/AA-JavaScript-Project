@@ -31,7 +31,7 @@ let score = 0
 let gameOver = false
 let arr = [0,1,2,3,4,5,6,7,8]
 
-// import Capy from './scripts/create_chars'
+import Capy from './scripts/create_chars'
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("start");

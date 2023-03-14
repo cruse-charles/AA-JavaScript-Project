@@ -37,11 +37,12 @@ ol, ul {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
 }
 
 body {
+  background-image: url(../assets/Grass_Sample.png);
   background-color: lightgreen;
   overflow: hidden;
 }
@@ -49,9 +50,12 @@ body {
 #board {
   height: 600px;
   width: 600px;
-  background-color: green;
+  position: relative;
+  top: 50px;
+  background-image: url(../assets/transparent_background.jpg);
   border: 3px solid black;
   margin: auto auto;
+  border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -60,7 +64,7 @@ body {
 .hole {
   height: 180px;
   width: 180px;
-  background-color: rgb(157, 76, 18);
+  background-color: rgb(116, 51, 5);
   border-radius: 100%;
   position: relative;
   overflow: hidden;
@@ -108,6 +112,7 @@ body {
   position: absolute;
   right: 160px;
   bottom: 100px;
+  z-index: 1;
 }
 
 #start-screen {
@@ -117,12 +122,20 @@ body {
   background-color: #fff;
   padding: 1em;
   position: relative;
-  top: 250px;
-  width: 700px;
+  top: 200px;
+  width: 650px;
+  z-index: 1;
 }
 
 #barn {
   position: absolute;
   right: 100px;
   top: 50px;
+}
+
+#animals {
+  position: absolute;
+  top: 200px;
+  height: 500px;
+  width: 500px;
 }

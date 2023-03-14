@@ -1,23 +1,24 @@
 class Capy {
     constructor() {
 
-        // if(gameOver) {
-        //     return
-        // }
-    
-    
-        
+    }
+    // if(gameOver) {
+    //     return
+    // }
+
+    createCapy1() {
+
         let capy1 = document.createElement("img");
         capy1.src = './assets/clear-capybara.png';
         capy1.classList.add('character')
         
         let num1 = randomNum();
         let capyHole1 = document.getElementById(num1);
-
+    
         if(capyHole1) {
             capyHole1.innerHTML = "";
         }
-
+    
         capyHole1.appendChild(capy1);
     
         capy1.addEventListener('click', () => {
@@ -26,6 +27,7 @@ class Capy {
             capyHole1.removeChild(capy1);
         })
     }
+    
 }
 
 
@@ -36,7 +38,7 @@ function randomNum() {
     return randNum.toString();
 }
 
-setInterval(new Capy,1500)
+setInterval(Capy.createCapy1,1500)
 
 
 export default Capy;
