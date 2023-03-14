@@ -78,8 +78,6 @@ function createCapy1() {
         document.getElementById("score").innerText = score.toString();
         capyHole1.removeChild(capy1);
     })
-
-    
     
 }
 
@@ -95,15 +93,15 @@ function createCapy2() {
     }   
     
     capy2 = document.createElement("img");
-    capy2.id = "capy2";
+    // capy2.id = "capy2";
     capy2.src = './assets/clear-capybara.png';
     capy2.classList.add('character')
     
     num2 = randomNum();
-
     capyHole2 = document.getElementById(num2);
+// debugger;
     capyHole2.appendChild(capy2);
-    
+// debugger;    
     capy2.addEventListener('click', () => {
         score += 10;
         document.getElementById("score").innerText = score.toString();
@@ -137,7 +135,7 @@ function createFarmer() {
     farmerHole.appendChild(farmer);
 
     farmer.addEventListener('click', () => {
-        gameOver = true
+        gameOver = true;
         document.getElementById("h1").innerText = "Game Over: " + score.toString();
     })
 
@@ -149,7 +147,7 @@ function runGame() {
     // new Capy();
     setInterval(createCapy2, 1000);
     setInterval(createFarmer, 1000);
-    setInterval(resetArr, 1000)
+    setInterval(resetArr, 1000);
 }
 
 function randomNum() {

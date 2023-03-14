@@ -11,9 +11,20 @@
   </head>
 
   <body>
-    <h1 id="h1">Score: <span id="score">00</span></h1>
-    <div id="board">
+
+    <div>
+      <div id="start-screen">Help, Help! Please lend me a hand, capybaras are eating all my vegetables! They've dug tunnels throughout my precious farmland. I'll dive into the tunnel to scare them out of their holes, and when they pop out, give them a good whack! Be careful not to hit me though!</div>
+      <img id="intro-farmer"src="./assets/clear-intro-farmer.png">
     </div>
+
+    <div>
+      <img id="barn" src="./assets/transparent_barn.png">
+    </div>
+    
+    <canvas style="display: none">
+      <h1 class="game" id="h1">Score: <span id="score">00</span></h1>
+      <div class="game" id="board"></div>
+    </canvas>
 
     <div class="cursor"></div>
     <script src="./src/scripts/mouse.js"></script>

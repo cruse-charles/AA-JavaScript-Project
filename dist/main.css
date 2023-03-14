@@ -44,7 +44,6 @@ h1 {
 body {
   background-color: lightgreen;
   overflow: hidden;
-  cursor: none;
 }
 
 #board {
@@ -101,4 +100,29 @@ body {
 
 .cursor.active {
   transform: translate(-40%, -40%) rotate(-45deg);
+}
+
+#intro-farmer {
+  height: 300px;
+  width: 200px;
+  position: absolute;
+  right: 160px;
+  bottom: 100px;
+}
+
+#start-screen {
+  font-size: 40px;
+  word-spacing: 0.2em;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1em;
+  position: relative;
+  top: 250px;
+  width: 700px;
+}
+
+#barn {
+  position: absolute;
+  right: 100px;
+  top: 50px;
 }
