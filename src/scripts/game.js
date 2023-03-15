@@ -14,25 +14,25 @@ class Game {
         this.farmer2 = new Farmer(this);
 
 
-        // setInterval(() => {
-        //     this.farmer1.draw();
-        // }, randomNum(500,1500));
+        setInterval(() => {
+            this.farmer1.draw();
+        }, randomNum(500,1500));
 
-        // setInterval(() => {
-        //     this.farmer2.draw();
-        // }, randomNum(500,1500));
+        setInterval(() => {
+            this.farmer2.draw();
+        }, randomNum(500,1500));
 
-        // setInterval(() => {
-        //     this.capy1.draw();
-        // }, randomNum(500,1500));
+        setInterval(() => {
+            this.capy1.draw();
+        }, randomNum(500,1500));
 
-        // setInterval(() => {
-        //     this.capy2.draw();
-        // }, randomNum(500,1500));
+        setInterval(() => {
+            this.capy2.draw();
+        }, randomNum(500,1500));
 
         setInterval(() => {
             this.capy3.draw();
-        }, 3000);
+        }, randomNum(500,1500));
 
         setInterval(() => {
             this.incrementTimer();
