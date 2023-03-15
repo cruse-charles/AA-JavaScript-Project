@@ -7,27 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./dist/main.css" />
     <script src="./dist/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <title>Whack-A-Bara</title>
   </head>
 
   <body>
 
-    <!-- <div>
+    <div>
       <div id="start-screen">Help, Help! Please lend me a hand, capybaras are eating all my vegetables! They've dug tunnels throughout my precious farmland. I'll dive into the tunnel to scare them out of their holes, and when they pop out, give them a good whack! Be careful not to hit me though!
-        <button>Start!</button>
+        <button id="start-button" onclick="startGame()">Start!</button>
       </div>
       <img id="intro-farmer"src="./assets/clear-intro-farmer.png">
-    </div> -->
+    </div>
 
     <div>
       <img id="barn" src="./assets/transparent_barn.png">
       <img id="animals" src="./assets/transparent animals.png">
     </div>
     
-    <!-- <canvas style="display: none"> -->
+    <div id="canvas" style="display: none">
       <h1 class="game" id="h1">Score: <span id="score">00</span></h1>
       <div class="game" id="board"></div>
-    <!-- </canvas> -->
+    </div>
 
     <div class="cursor"></div>
     <script src="./src/scripts/mouse.js"></script>

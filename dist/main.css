@@ -52,7 +52,7 @@ body {
   width: 600px;
   position: relative;
   top: 50px;
-  background-image: url(../assets/transparent_background.jpg);
+  background-image: url(../assets/transparent_background.png);
   border: 3px solid black;
   margin: auto auto;
   border-radius: 20px;
@@ -116,6 +116,7 @@ body {
 }
 
 #start-screen {
+  font-family: "VT323", monospace;
   font-size: 40px;
   word-spacing: 0.2em;
   margin: 0 auto;
@@ -125,6 +126,7 @@ body {
   top: 200px;
   width: 650px;
   z-index: 1;
+  border-radius: 40px;
 }
 
 #barn {
@@ -138,4 +140,8 @@ body {
   top: 200px;
   height: 500px;
   width: 500px;
+}
+
+#score, #h1 {
+  font-family: "VT323", monospace;
 }
