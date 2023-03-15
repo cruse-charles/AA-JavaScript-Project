@@ -19,14 +19,14 @@ class Capy {
             return
         }
 
-        
         this.position = randomNum()
         this.capyHole = document.getElementById(this.position);
         // console.log(this.position)
 
+// debugger
+
         this.capy.addEventListener('click', () => {
             this.capyHole.removeChild(this.capy);
-            // debugger
             // this.capy.parentElement.innerHTML = "";
         })
         
@@ -41,7 +41,6 @@ class Capy {
             }
         }
         
-        
         this.capyHole.appendChild(this.capy);
         
 
@@ -55,13 +54,13 @@ class Capy {
     }
 
 
-    restart() {
-        if(this.capyHole){
-        this.capyHole.removeChild(this.capy);
-        } else {
-            return
-        }
-    }
+    // restart() {
+    //     if(this.capyHole){
+    //     this.capyHole.removeChild(this.capy);
+    //     } else {
+    //         return
+    //     }
+    // }
     
 }
 

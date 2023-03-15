@@ -46,13 +46,13 @@ class Farmer {
     
     }
 
-    restart() {
-        if(this.farmerHole) {
-            this.farmerHole.removeChild(this.farmer);
-        } else {
-            return
-        }
-    }
+    // restart() {
+    //     if(this.farmerHole) {
+    //         this.farmerHole.removeChild(this.farmer);
+    //     } else {
+    //         return
+    //     }
+    // }
     
 }
 

@@ -13,49 +13,60 @@ class Game {
         this.farmer1 = new Farmer(this);
         this.farmer2 = new Farmer(this);
 
+
         // setInterval(() => {
-        //     this.farmer.draw();
-        // }, 1500);
+        //     this.farmer1.draw();
+        // }, randomNum(500,1500));
+
+        // setInterval(() => {
+        //     this.farmer2.draw();
+        // }, randomNum(500,1500));
+
         // setInterval(() => {
         //     this.capy1.draw();
-        // }, 1500);
+        // }, randomNum(500,1500));
 
         // setInterval(() => {
         //     this.capy2.draw();
-        // }, 1500);
-        // // setInterval(this.capy2.draw.bind(this.capy2), 1000);
-
-
-
-        setInterval(() => {
-            this.farmer1.draw();
-        }, randomNum(500,1500));
-
-        setInterval(() => {
-            this.farmer2.draw();
-        }, randomNum(500,1500));
-
-        setInterval(() => {
-            this.capy1.draw();
-        }, randomNum(500,1500));
-
-        setInterval(() => {
-            this.capy2.draw();
-        }, randomNum(500,1500));
+        // }, randomNum(500,1500));
 
         setInterval(() => {
             this.capy3.draw();
-        }, randomNum(500,1500));
+        }, 3000);
 
+        setInterval(() => {
+            this.incrementTimer();
+        }, 1000)
 
         this.score = 0;
         this.gameOver = false;
+        this.timer = 60
         
     }
 
     hit() {
         this.score += 10;
         document.getElementById("score").innerText = this.score.toString();
+    }
+
+    incrementTimer() {
+        document.getElementById("timer").innerText = this.timer.toString()
+        this.timer -= 1
+        if (this.timer == 0){
+            this.gameOver = true;
+        }
+
+        if(this.gameOver) {
+            let gameOverScreen = document.getElementById("game-over-screen");
+            gameOverScreen.style.display = 'block';
+            let board = document.getElementById("board");
+            board.style.display = "none";
+            this.timer = 0
+            clearInterval(() => {
+                this.incrementTimer();
+            }, 1000)
+            this.bindRestart()
+        }
     }
 
 
@@ -72,12 +83,15 @@ class Game {
         board.style.display = "flex";
         let gameOverScreen = document.getElementById("game-over-screen");
         gameOverScreen.style.display = 'none';
+        this.timer = 60
     }
 
     bindRestart() {
         this.gameOverButton = document.getElementById('game-over-button')
         this.gameOverButton.addEventListener('click', this.restart.bind(this))
     }
+
+
     
 }
 
