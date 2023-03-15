@@ -117,6 +117,7 @@ body {
     transform: translate(-40%, -40%);
     transition: transform .1s;
     pointer-events: none;
+    z-index: 2;
 }
 
 .cursor.active {
@@ -127,26 +128,37 @@ body {
 #intro-farmer {
     height: 300px;
     width: 200px;
-    position: absolute;
+    position: fixed;
     right: 160px;
     bottom: 100px;
     z-index: 1;
 }
 
-#start-screen{
+#start-screen, #game-over-screen{
     font-family: 'VT323', monospace;
     font-size: 40px;
     word-spacing: 0.2em;
+    text-align: center;
     margin: 0 auto;
     background-color: #fff;
     padding: 1em;
     // border-bottom: 2px solid #0e6dad;
     position: relative;
-    top: 200px;
+    top: 100px;
     width: 650px;
     // line-height: 1.2em;
     z-index: 1;
     border-radius: 40px;
+}
+
+#start-button, #game-over-button {
+    height: 25px;
+    width: 65px;
+    
+    font-size: 20px;
+    font-family: 'VT323', monospace;
+    background-color: yellow;
+
 }
 
 #barn{
@@ -162,6 +174,28 @@ body {
     width: 500px;
 }
 
-#score, #h1{
+#score, #score-title{
     font-family: 'VT323', monospace;
+}
+
+// #game-over-screen {
+//     font-family: 'VT323', monospace;
+//     font-size: 40px;
+//     word-spacing: 0.2em;
+//     text-align: center;
+//     margin: 0 auto;
+//     background-color: #fff;
+//     padding: 1em;
+//     // border-bottom: 2px solid #0e6dad;
+//     position: relative;
+//     top: 200px;
+//     width: 650px;
+//     // line-height: 1.2em;
+//     z-index: 1;
+//     border-radius: 40px;
+// }
+
+#game-over-button {
+    width: 100px;
+    // z-index: 1;
 }

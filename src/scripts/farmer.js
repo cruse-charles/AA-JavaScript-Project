@@ -8,8 +8,15 @@ class Farmer {
         this.farmer.classList.add('character');
 
         this.farmer.addEventListener('click', () => {
-            document.getElementById("h1").innerText = "Game Over: " + this.game.score.toString();
             this.game.gameOver = true;
+
+            if(this.game.gameOver) {
+                let gameOverScreen = document.getElementById("game-over-screen");
+                gameOverScreen.style.display = 'block';
+                let board = document.getElementById("board");
+                board.style.display = "none";
+                this.game.bindRestart()
+            }
         })
     }
 
@@ -37,6 +44,14 @@ class Farmer {
 
         this.farmerHole.appendChild(this.farmer);
     
+    }
+
+    restart() {
+        if(this.farmerHole) {
+            this.farmerHole.removeChild(this.farmer);
+        } else {
+            return
+        }
     }
     
 }

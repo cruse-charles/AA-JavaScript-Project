@@ -21,11 +21,13 @@ class Capy {
 
         
         this.position = randomNum()
-        this.capyHole = document.getElementById(this.position); //this was above append child before, moving below for testing
-        console.log(this.position)
+        this.capyHole = document.getElementById(this.position);
+        // console.log(this.position)
 
         this.capy.addEventListener('click', () => {
             this.capyHole.removeChild(this.capy);
+            // debugger
+            // this.capy.parentElement.innerHTML = "";
         })
         
         
@@ -52,6 +54,14 @@ class Capy {
     
     }
 
+
+    restart() {
+        if(this.capyHole){
+        this.capyHole.removeChild(this.capy);
+        } else {
+            return
+        }
+    }
     
 }
 
