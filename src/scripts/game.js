@@ -54,7 +54,7 @@ class Game {
     incrementTimer() {
         document.getElementById("timer").innerText = this.timer.toString()
         this.timer -= 1
-        if (this.timer == 0){
+        if (this.timer == -1){
             this.gameOver = true;
         }
 
