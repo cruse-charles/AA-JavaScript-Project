@@ -5,9 +5,11 @@ class Capy {
         this.capy = document.createElement("img");
         this.capy.src = './assets/clear-capybara.png';
         this.capy.classList.add('character');
+        this.sound = new Audio('./assets/assets_smash.mp3')
 
         this.capy.addEventListener('click', () => {
             this.game.hit()
+            this.sound.play()
         })
 
 

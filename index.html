@@ -15,6 +15,17 @@
   </head>
 
   <body>
+    <audio id='background-music'loop autoplay>
+      <source src="./assets/farm_music.mp3">
+    </audio>
+    <script>
+      window.addEventListener('click', () => {
+        document.getElementById('background-music').play()
+      })
+    </script>
+
+
+
     <div id="icons">
       <a href="https://github.com/cruse-charles/AA-JavaScript-Project"><img id='linkedin' src="./assets/linkedin-icon-logo-png-transparent.png"></a>
       <a href="https://www.linkedin.com/in/charles-cruse-2ba72ab6/"><img id='github' src="./assets/githubicon.png"></a>

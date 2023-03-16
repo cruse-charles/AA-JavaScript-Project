@@ -13,26 +13,28 @@ class Game {
         this.farmer1 = new Farmer(this);
         this.farmer2 = new Farmer(this);
 
+        // this.gameMusic = new Audio('./assets/farm_music.mp3')
+        // this.gameMusic.play()
 
         setInterval(() => {
             this.farmer1.draw();
-        }, randomNum(500,1500));
+        }, randomNum(600,1500));
 
         setInterval(() => {
             this.farmer2.draw();
-        }, randomNum(500,1500));
+        }, randomNum(600,1500));
 
         setInterval(() => {
             this.capy1.draw();
-        }, randomNum(500,1500));
+        }, randomNum(600,1500));
 
         setInterval(() => {
             this.capy2.draw();
-        }, randomNum(500,1500));
+        }, randomNum(600,1500));
 
         setInterval(() => {
             this.capy3.draw();
-        }, randomNum(500,1500));
+        }, randomNum(600,1500));
 
         setInterval(() => {
             this.incrementTimer();
