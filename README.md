@@ -25,9 +25,14 @@ Whack-A-Bara will be constucted using HTML, CSS, and JavaScript. Please see the 
 
 Farmer and Capybara Logic:
 Farmer and Capybara instances will be image HTML elements. These elements are then appended to a div, which will act as the holes in the board. This way, consistnetly appending this same element to different divs will also remove it from the previous div. And before being appended to a div, there will be a check if this div has elements within it, to ensure multiple objects aren't occupying the same div.
-![alt-img](./readme/capybara-constructor.PNG) ![alt-img](./readme/draw.PNG). 
+
+![alt-img](./readme/capybara-constructor.PNG) ![alt-img](./readme/draw.PNG) 
 
 
+Game Over logic:
+Game Over can be achieved in two ways. The first way is by hitting the farmer element. The second way is by the timer running down to 0. In both these cases, a popup will appear. This will pause the game from continuing to run and, on clicking the 'try again' button, will restart the game for the user.
+
+![alt-img](./readme/farmer-constructor.PNG) ![alt-img](./readme/timer-and-restart.PNG)
 
 
 Timeline:
