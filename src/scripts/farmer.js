@@ -30,7 +30,6 @@ class Farmer {
 
         this.position = randomNum()
         this.farmerHole = document.getElementById(this.position);
-        console.log(this.position)
 
         let empty = false
         while(!empty) {
@@ -46,14 +45,7 @@ class Farmer {
     
     }
 
-    // restart() {
-    //     if(this.farmerHole) {
-    //         this.farmerHole.removeChild(this.farmer);
-    //     } else {
-    //         return
-    //     }
-    // }
-    
+
 }
 
 

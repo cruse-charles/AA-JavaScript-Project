@@ -23,9 +23,9 @@ class Capy {
 
         this.position = randomNum()
         this.capyHole = document.getElementById(this.position);
-        // console.log(this.position)
 
-// debugger
+
+
 
         this.capy.addEventListener('click', () => {
             this.capyHole.removeChild(this.capy);
@@ -46,23 +46,9 @@ class Capy {
         this.capyHole.appendChild(this.capy);
         
 
-
-        
-        
-        //search for an element with the position, check if it's full, if so put the game while loop in here and let it loop
-        //through that, don't draw until the spot is empty here, do this before the append child.
-
-    
     }
 
 
-    // restart() {
-    //     if(this.capyHole){
-    //     this.capyHole.removeChild(this.capy);
-    //     } else {
-    //         return
-    //     }
-    // }
     
 }
 

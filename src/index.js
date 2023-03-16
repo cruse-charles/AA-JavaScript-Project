@@ -13,8 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
         introFarmer.style.display = "none";
         canvas.style.display = "block";
         new Game();
-
-
     }
         
 

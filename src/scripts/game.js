@@ -13,8 +13,6 @@ class Game {
         this.farmer1 = new Farmer(this);
         this.farmer2 = new Farmer(this);
 
-        // this.gameMusic = new Audio('./assets/farm_music.mp3')
-        // this.gameMusic.play()
 
         setInterval(() => {
             this.farmer1.draw();
@@ -75,9 +73,7 @@ class Game {
     
     
     restart() {
-        // this.capy1.restart()
-        // this.capy2.restart()
-        // this.farmer.restart()
+
         this.score = 0;
         document.getElementById("score").innerText = this.score.toString();
         this.gameOver = false;
