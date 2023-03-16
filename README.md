@@ -22,6 +22,14 @@ In addition, the project will include:
 Whack-A-Bara will be constucted using HTML, CSS, and JavaScript. Please see the image below for a wireframe layout of the game.
 ![wireframe](./assets/wireframe.PNG)
 
+
+Farmer and Capybara Logic:
+Farmer and Capybara instances will be image HTML elements. These elements are then appended to a div, which will act as the holes in the board. This way, consistnetly appending this same element to different divs will also remove it from the previous div. And before being appended to a div, there will be a check if this div has elements within it, to ensure multiple objects aren't occupying the same div.
+![alt-img](./readme/capybara-constructor.PNG) ![alt-img](./readme/draw.PNG). 
+
+
+
+
 Timeline:
 
 * Friday Afternoon & Weekend: Research and creation of functionality of the game. This will incude creating methods for creating the game grid, movement of the capybaras, and the interaction with a mouse click.
