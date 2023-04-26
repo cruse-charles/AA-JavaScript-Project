@@ -16,23 +16,23 @@ class Game {
 
         setInterval(() => {
             this.farmer1.draw();
-        }, randomNum(600,1500));
+        }, randomNum(800,2000));
 
         setInterval(() => {
             this.farmer2.draw();
-        }, randomNum(600,1500));
+        }, randomNum(800,2000));
 
         setInterval(() => {
             this.capy1.draw();
-        }, randomNum(600,1500));
+        }, randomNum(800,2000));
 
         setInterval(() => {
             this.capy2.draw();
-        }, randomNum(600,1500));
+        }, randomNum(800,2000));
 
         setInterval(() => {
             this.capy3.draw();
-        }, randomNum(600,1500));
+        }, randomNum(800,2000));
 
         setInterval(() => {
             this.incrementTimer();
@@ -69,6 +69,11 @@ class Game {
         }
     }
 
+    
+    // showInstructions() {
+    //     let startScreen = document.getElementById("start-screen");
+    //     startScreen.style.display = 'block';
+    // }
 
     
     
@@ -87,6 +92,10 @@ class Game {
     bindRestart() {
         this.gameOverButton = document.getElementById('game-over-button')
         this.gameOverButton.addEventListener('click', this.restart.bind(this))
+        this.instructionsScreen = document.getElementById('instructions-screen')
+        this.instructionsScreen.style.display = 'none';
+        // this.startButton = document.getElementById('start-button')
+        // this.startButton.addEventListener('click', this.restart.bind(this))
     }
 
 

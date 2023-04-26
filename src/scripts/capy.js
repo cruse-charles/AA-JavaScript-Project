@@ -8,38 +8,23 @@ class Capy {
         this.sound = new Audio('./assets/assets_smash.mp3')
 
         this.capy.addEventListener('click', () => {
-            this.game.hit();
-            this.sound.play();
-            this.capy.removeEventListener('click', this.boundCapy);
+            this.game.hit()
+            this.sound.play()
+            this.capyHole.removeChild(this.capy)
         })
 
-
-    }
-
-    removeCapy() {
-        this.capyHole.removeChild(this.capy);
     }
 
     draw() {
 
         if(this.game.gameOver) {
-            return;
+            return
         }
 
-        this.position = randomNum();
+        this.position = randomNum()
         this.capyHole = document.getElementById(this.position);
 
-        this.boundCapy = this.removeCapy.bind(this);
-        this.capy.addEventListener('click', this.boundCapy);
-
-
-        // this.capy.addEventListener('click', () => {
-        //     this.capyHole.removeChild(this.capy);
-        //     // this.capy.parentElement.innerHTML = "";
-        // })
-        
-        
-        let empty = false;
+        let empty = false
         while(!empty) {
             empty = true;
             if (this.capyHole.innerHTML != "") {
@@ -50,21 +35,12 @@ class Capy {
         }
         
         this.capyHole.appendChild(this.capy);
-        
-
     }
-
-
-    
 }
-
-
 
 function randomNum() {
     let num = Math.floor(Math.random() * 9);
     return num.toString();
 }
-
-
 
 export default Capy;

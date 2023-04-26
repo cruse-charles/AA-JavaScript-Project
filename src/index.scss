@@ -154,7 +154,28 @@ body {
     border: 5px solid black;
 }
 
-#start-button, #game-over-button {
+#instructions-screen{
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    word-spacing: 0.2em;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1em;
+    // border-bottom: 2px solid #0e6dad;
+    position: absolute;
+    top: 127px;
+    left: 400px;
+    width: 650px;
+    // line-height: 1.2em;
+    z-index: 1;
+    border-radius: 40px;
+    border: 5px solid black;
+    display: none;
+}
+
+
+#start-button, #game-over-button, #close-instructions-button{
     height: 25px;
     width: 65px;
     
@@ -163,6 +184,15 @@ body {
     background-color: yellow;
 
 }
+
+
+#instructions-button {
+    font-size: 20px;
+    font-family: 'VT323', monospace;
+    background-color: yellow;
+}
+
+
 
 #barn{
     position: absolute;
@@ -197,3 +227,10 @@ body {
     left: 0px;
     float: left;
 }
+
+#header{
+    display:flex;
+    justify-content: flex-end;
+    // height:300px;
+}
+
