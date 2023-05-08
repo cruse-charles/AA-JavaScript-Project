@@ -3,6 +3,8 @@ An introduction to the game will be given by a farmer character who is in need o
     
 Capybara images will appear and disappear out of a grid of holes. A player must move their hammer (cursor) and click on the capybaras to whack them before they hide back into their hole. Any capybara successfully hit will increase the player's score, which will be displayed at the top. However, the farmer is underground as well to 'make the capybaras pop out.' If a user hits the farmer, then the game is over. The game will also end when the timer at the top of the page has run out of time.
 
+A live link can be accessed here: https://github.com/cruse-charles/AA-JavaScript-Project/deployments
+
 
 In Whack-A-Bara, users will be able to:
 
