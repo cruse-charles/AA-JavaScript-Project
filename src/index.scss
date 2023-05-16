@@ -144,11 +144,22 @@ body {
     margin: 0 auto;
     background-color: #fff;
     padding: 1em;
-    // border-bottom: 2px solid #0e6dad;
-    position: relative;
-    top: 100px;
+
+// original code below
+    // position: relative;
+    // top: 100px;
+    // width: 650px;
+// original code above
+
+
+// test code below
+    position: absolute;
+    top: 20%;
+    right: 30%;
     width: 650px;
-    // line-height: 1.2em;
+// test code above
+
+
     z-index: 1;
     border-radius: 40px;
     border: 5px solid black;
@@ -162,17 +173,28 @@ body {
     margin: 0 auto;
     background-color: #fff;
     padding: 1em;
-    // border-bottom: 2px solid #0e6dad;
+
+
+// real code below
+    // position: absolute;
+    // top: 127px;
+    // left: 400px;
+    // width: 650px;
+// real code above
+
+// test code below
     position: absolute;
-    top: 127px;
-    left: 400px;
+    top: 20%;
+    right: 30%;
     width: 650px;
-    // line-height: 1.2em;
+    color: red;
+// test code above
+
+
     z-index: 1;
     border-radius: 40px;
     border: 5px solid black;
-    display: none;
-}
+    display: none;}
 
 
 #start-button, #game-over-button, #close-instructions-button{

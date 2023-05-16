@@ -127,8 +127,9 @@ body {
   margin: 0 auto;
   background-color: #fff;
   padding: 1em;
-  position: relative;
-  top: 100px;
+  position: absolute;
+  top: 20%;
+  right: 30%;
   width: 650px;
   z-index: 1;
   border-radius: 40px;
@@ -144,9 +145,10 @@ body {
   background-color: #fff;
   padding: 1em;
   position: absolute;
-  top: 127px;
-  left: 400px;
+  top: 20%;
+  right: 30%;
   width: 650px;
+  color: red;
   z-index: 1;
   border-radius: 40px;
   border: 5px solid black;
