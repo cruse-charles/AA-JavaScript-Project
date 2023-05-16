@@ -31,6 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
         instructionsScreen.style.display = 'none';
     }
         
+    document.getElementById('mute-button').onclick = toggleMute;
+    function toggleMute() {
+        const audioElement = document.getElementById('background-music')
+        audioElement.muted = !audioElement.muted;
+
+        const muteButton = document.getElementById('mute-button')
+        muteButton.textContent = audioElement.muted ? "Unmute" : "Mute";
+    }
+    
 
 })
 
